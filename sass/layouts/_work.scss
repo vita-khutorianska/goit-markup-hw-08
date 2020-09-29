@@ -1,0 +1,37 @@
+/*чем занимаються*/
+
+.section.work {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work__item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+
+  &:nth-child(3) {
+  margin-right: 0;
+}
+}
+
+/* overlay with subtitle */
+.work__thumb {
+  position: relative;
+}
+.work__subtitle.subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 27px 0;
+  text-align: center;
+
+  color: $white;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+}

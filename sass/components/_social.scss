@@ -1,0 +1,64 @@
+/* список соцсети */
+.social {
+  display: flex;
+  justify-content: center;
+  
+  &__item:not(:last-child) {
+  margin-right: 10px;
+}
+}
+
+
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color $main-transition;
+  &:hover,
+  &:focus {
+    background-color: $acent;
+  }
+}
+
+.social__icon {
+  fill: $icon-color;
+  width: 20px;
+  height: 20px;
+
+  transition: fill $main-transition;
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $white;
+  }
+}
+
+// foter link
+.social__link--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color $main-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $acent;
+  }
+}
+.social__icon--white {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+  transition: fill $main-transition;
+}

@@ -1,0 +1,37 @@
+.team {
+  background-color: $section-team-bg-color;
+  padding: 94px 0;
+}
+.team__list {
+  display: flex;
+  flex-wrap: wrap;}
+
+.team__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: $btn-text-fs;
+  line-height: 1.18;
+  text-align: center;
+}
+.team__text.text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  text-align: center;
+}
+.team__item {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+
+  box-shadow: $modal-team-box-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+ &:nth-child(4n){margin-right: 0;}
+  
+}
+.team__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
