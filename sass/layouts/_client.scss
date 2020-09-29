@@ -1,17 +1,17 @@
 /* клиенты */
 
-.client {
-  display: flex;
+// // .client {
+//   // display: flex;
 
-  &__item:not(:last-child) {
-  margin-right: 30px;
-}
-}
+//   // &__item:not(:last-child) {
+//   // margin-right: 30px;
+// }
+
 
 .client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid $icon-color;

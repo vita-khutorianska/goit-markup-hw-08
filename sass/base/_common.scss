@@ -5,13 +5,15 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
   color: $primery-text-color;
   background-color: $white;
   text-decoration: none;
-  font-weight: 400;
+  
+   font-weight: 400;
 
   font-size: $main-fs;
   line-height: 1.71;
@@ -27,19 +29,38 @@ body {
   margin: 0;
   padding: 0;
 }
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .flexbox {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+
+
+  @include for-size(mobile) {
+    width: 480px;
+    background-color: royalblue;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+background-color: seagreen;
+  }
+
+
+  @include for-size(desktop) {
+    width: 1200px;
+    background-color: sienna;
+  }
 }
-.section {
-  padding: 94px 0;
-}
+
+
+// .section {
+//   padding: 94px 0;
+// }
 img {
   display: block;
   max-width: 100%;

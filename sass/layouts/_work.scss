@@ -3,6 +3,12 @@
 .section.work {
   padding-top: 0;
   padding-bottom: 94px;
+  @mixin for-size($mobile) {
+    display: none;
+  }
+
+  $tablet: 768px;
+  $desktop: 1280px;
 }
 
 .work__list {
