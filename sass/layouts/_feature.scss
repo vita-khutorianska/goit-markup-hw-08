@@ -1,5 +1,7 @@
 /*Преимущества*/
-
+.feature {
+  padding-bottom: 0;
+}
 
 // .feature__item {
   // width: calc((100% - 30px * 3) / 4);
@@ -14,7 +16,7 @@
   
 //  }
 
-  &::before {
+ .feature__item::before {
   display: block;
   content: "";
   height: 120px;
