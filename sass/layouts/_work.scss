@@ -1,11 +1,11 @@
 /*чем занимаються*/
 
 .section.work {
-  padding-top: 0;
-  padding-bottom: 94px;
-  @mixin for-size($mobile) {
-    display: none;
-  }
+  display: none;
+  // padding-top: 0;
+  // padding-bottom: 94px;
+   
+  
 
   $tablet: 768px;
   $desktop: 1280px;
