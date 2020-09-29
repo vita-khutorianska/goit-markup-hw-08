@@ -18,11 +18,11 @@
   height: 44px;
   border-radius: 50%;
 
-  transition: background-color $main-transition;
-  &:hover,
-  &:focus {
-    background-color: $acent;
-  }
+  // transition: background-color $main-transition;
+  // &:hover,
+  // &:focus {
+  //   background-color: $acent;
+  // }
 }
 
 .social__icon {
@@ -30,12 +30,12 @@
   width: 20px;
   height: 20px;
 
-  transition: fill $main-transition;
+  // transition: fill $main-transition;
 
-  .social__link:hover &,
-  .social__link:focus & {
-    fill: $white;
-  }
+  // .social__link:hover &,
+  // .social__link:focus & {
+  //   fill: $white;
+  // }
 }
 
 // foter link
@@ -49,16 +49,16 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color $main-transition;
+  // transition: background-color $main-transition;
 
-  &:hover,
-  &:focus {
-    background-color: $acent;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $acent;
+  // }
 }
 .social__icon--white {
   width: 20px;
   height: 20px;
   fill: $white;
-  transition: fill $main-transition;
+  // transition: fill $main-transition;
 }
