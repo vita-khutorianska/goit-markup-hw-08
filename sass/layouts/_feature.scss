@@ -1,19 +1,18 @@
 /*Преимущества*/
 
 
-.feature__item {
+// .feature__item {
   // width: calc((100% - 30px * 3) / 4);
   // margin-right: 30px;
 
-   @include for-size(mobile){
-    min-width: 450px;
+  
 
   
 
   //   &:nth-child(4) {
   // margin-right: 0;
   
- }
+//  }
 
   &::before {
   display: block;
@@ -25,7 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-}
+
 
 .icon-antenna::before {
   background-image: url(../img2/icons/antenna.svg);
