@@ -2,16 +2,16 @@
 
 
 .feature__item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
+  // width: calc((100% - 30px * 3) / 4);
+  // margin-right: 30px;
 
-  // @include for-size(mobile){
-    min-width: 450px
-  }
+   @include for-size(mobile){
+    min-width: 450px;
+
   
 
-    &:nth-child(4) {
-  margin-right: 0;
+  //   &:nth-child(4) {
+  // margin-right: 0;
   
  }
 
@@ -43,6 +43,7 @@
 .feature__subtitle.subtitle {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .feature__text {
