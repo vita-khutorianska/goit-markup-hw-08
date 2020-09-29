@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -42,7 +43,7 @@ body {
 
   @include for-size(mobile) {
     width: 480px;
-    background-color: royalblue;
+    background-color: rgb(173, 188, 233);
   }
 
   @include for-size(tablet) {
@@ -58,9 +59,11 @@ background-color: seagreen;
 }
 
 
-// .section {
-//   padding: 94px 0;
-// }
+ .section {
+   padding-top: 60px;
+    // @include for-size(mobile){
+    // min-width: 450px;
+ }
 img {
   display: block;
   max-width: 100%;
@@ -96,11 +99,11 @@ img {
 }
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: $subtitle-btn-fw;
   font-size: $title-fs;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
 }
 .subtitle {
@@ -110,7 +113,6 @@ img {
   text-transform: uppercase;
 }
 .text {
-  font-size: $main-fs;
   font-size: $btn-text-fs;
   line-height: 1.87;
   color: $text-color;

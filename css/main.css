@@ -38,7 +38,7 @@ body {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: royalblue;
+    background-color: #adbce9;
   }
 }
 
@@ -54,6 +54,10 @@ body {
     width: 1200px;
     background-color: sienna;
   }
+}
+
+.section {
+  padding-top: 60px;
 }
 
 img {
@@ -88,10 +92,10 @@ img {
 
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -103,7 +107,6 @@ img {
 }
 
 .text {
-  font-size: 14px;
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
@@ -230,14 +233,10 @@ img {
 }
 
 /*Преимущества*/
-.feature__item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  min-width: 450px .feature__item;
-}
-
-.feature__item :nth-child(4) {
-  margin-right: 0;
+@media (min-width: 480px) {
+  .feature__item {
+    min-width: 450px;
+  }
 }
 
 .feature__item::before {
@@ -269,6 +268,7 @@ img {
 .feature__subtitle.subtitle {
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .feature__text {
@@ -278,8 +278,7 @@ img {
 
 /*чем занимаються*/
 .section.work {
-  padding-top: 0;
-  padding-bottom: 94px;
+  display: none;
 }
 
 .work__list {
@@ -316,12 +315,7 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding: 94px 0;
-}
-
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 60px 0;
 }
 
 .team__subtitle {
@@ -340,19 +334,13 @@ img {
 }
 
 .team__item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .team__content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 /* список соцсети */
