@@ -440,8 +440,6 @@ img {
 }
 
 .footer__logo.logo {
-  display: flex;
-  text-align: center;
   margin-bottom: 20px;
   color: #ffffff;
   list-style: none;
@@ -450,17 +448,19 @@ img {
 .footer__subtitle.subtitle {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+.footer-social {
+  padding-bottom: 60px;
 }
 
 .adress {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .adress__name {
@@ -473,17 +473,22 @@ img {
   margin-top: 8px 0;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe {
+  padding-bottom: 60px;
 }
 
 .subscribe__form {
   display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .subscribe__mail {
   display: flex;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -494,6 +499,7 @@ img {
 }
 
 .subscribe__mail::placeholder {
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);

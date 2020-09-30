@@ -1,19 +1,24 @@
-// .subscribe {
+.subscribe {
+  padding-bottom: 60px;
+}
 //   display: flex;
 //   flex-direction: column;
 // }
 
  .subscribe__form {
  display: flex;
- justify-content: center;
+text-align: center;
+ flex-direction: column;
   
  }
 
 .subscribe__mail {
   display: flex;
+  margin-bottom: 20px;
+  
   
 
-  width: 358px;
+  width: 450px;
   min-height: 50px;
   // padding-left: 16px;
   // margin-right: 12px;
@@ -25,6 +30,7 @@
   color: $white;
 
   &::placeholder {
+    padding-left: 16px;
   font-size: $btn-text-fs;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -34,6 +40,7 @@
 .subscribe__btn.btn {
    display: flex;
    align-items: center;
+  
 
 
   padding-left: 29px;
