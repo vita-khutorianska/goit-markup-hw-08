@@ -23,9 +23,7 @@
   margin-bottom: 20px;
   color: $white;
 }
- .footer-social {
-   padding-bottom: 60px;
- }
+ 
 //   display: flex;
 //   flex-direction: column;
 //   margin-right: 93px;
@@ -61,3 +59,6 @@
 // &:focus {
 //   color: $acent;}
 // }
+.footer-social {
+   padding: 60px 0;
+ }

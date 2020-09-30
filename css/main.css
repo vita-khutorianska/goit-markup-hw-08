@@ -452,10 +452,6 @@ img {
   color: #ffffff;
 }
 
-.footer-social {
-  padding-bottom: 60px;
-}
-
 .adress {
   display: flex;
   flex-direction: column;
@@ -475,18 +471,17 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe {
-  padding-bottom: 60px;
+.footer-social {
+  padding: 60px 0;
 }
 
 .subscribe__form {
   display: flex;
-  text-align: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .subscribe__mail {
-  display: flex;
   margin-bottom: 20px;
   width: 450px;
   min-height: 50px;
@@ -510,9 +505,7 @@ img {
   align-items: center;
   padding-left: 29px;
   padding-right: 28px;
-  width: 200px;
   height: 50px;
-  border-radius: 4px;
   /* outline-color: transparent; */
 }
 
