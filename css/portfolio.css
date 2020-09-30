@@ -158,7 +158,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
-  list-style: none;
+  text-decoration: none;
 }
 
 .logo__main {
@@ -347,7 +347,6 @@ img {
 .footer__logo.logo {
   margin-bottom: 20px;
   color: #ffffff;
-  list-style: none;
 }
 
 .footer__subtitle.subtitle {
@@ -362,17 +361,16 @@ img {
   flex-direction: column;
   align-items: center;
   padding-bottom: 60px;
+  font-style: normal;
 }
 
 .adress__name {
   color: #ffffff;
-  font-style: normal;
 }
 
 .adress__link {
   display: block;
   margin-top: 8px 0;
-  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
