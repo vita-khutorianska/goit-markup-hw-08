@@ -1,17 +1,20 @@
- .menu {
+//  .menu {
 
-display:flex;
-}
+// display:flex;
+// flex-direction: column;
+// }
 
 // .menu__item:not(:last-child) {
 //    font-weight: 500px;
 //   margin-right: 50px;
 // }
 
-.menu .link {
+.menu__item  {
+ 
+
   
-  display: block;
-  padding: 32px 0;
+  // display: block;
+  // padding: 32px 0;
   
 
   &:hover,

@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
+  // outline: 2px solid red;
 
 
   
@@ -101,6 +101,7 @@ img {
   border-radius: 4px;
   
 }
+
 .title {
   margin-top: 0;
   margin-bottom: 30px;

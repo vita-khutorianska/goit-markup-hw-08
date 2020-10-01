@@ -24,7 +24,7 @@
 
 .navigation-wrap {
   background-color: palegoldenrod;
-  padding: 60px;
+  padding: 60px 0;
   text-align: center;
 
   
@@ -33,9 +33,12 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 480px;
 
     &.is-open {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+
     }
   }}
