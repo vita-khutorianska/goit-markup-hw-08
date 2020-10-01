@@ -23,10 +23,10 @@
 }
 
 .navigation-wrap {
- display:flex ;
- flex-direction: column;
-  padding: 60px auto;
+  background-color: palegoldenrod;
+  padding: 60px;
   text-align: center;
+
   
   @media screen and (max-width: 767px) {
     display: none;
