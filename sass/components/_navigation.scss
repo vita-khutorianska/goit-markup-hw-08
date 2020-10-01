@@ -1,0 +1,41 @@
+.nav-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @include for-size(tablet) {
+     display: none;
+ }
+}
+
+.nav-button .icon-cross {
+  display: none;
+}
+
+.nav-button.is-open .icon-cross {
+  display: block;
+}
+
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+
+.navigation-wrap {
+ display:flex ;
+ flex-direction: column;
+  padding: 60px auto;
+  text-align: center;
+  
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: flex;
+    }
+  }}

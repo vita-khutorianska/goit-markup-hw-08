@@ -1,8 +1,10 @@
 .header {
-  border: 1px solid #ececec;}
+  position: relative;
+  border: 1px solid #ececec;
 
-// &__nav {
-//   display: flex;
-//   align-items: center;
+&__nav {
+   display:flex;
+  align-items: center;
+  justify-content: space-between;
 //   margin-right: auto;}
-// }
+ }}

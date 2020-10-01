@@ -15,45 +15,64 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-
     <!--- шапка-->
     <header class="header">
       <div class="container flexbox">
-        <a href="./index.html" class="logo">
-          <span class="logo__main">Web</span><span class="logo__part">Studio</span>
-        </a>
         <nav class="header__nav">
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./" class="link--current">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link">Контакты</a>
-            </li>
-          </ul>
+          <a href="./index.html" class="logo">
+            <span class="logo__main">Web</span
+            ><span class="logo__part">Studio</span>
+          </a>
+          <button
+            type="button"
+            class="nav-button"
+            aria-expanded="false"
+            aria-controls="navigation-wrap"
+            data-nav-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./img2/sprite.svg#icon-cross"></use>
+              <use class="icon-menu" href="./img2/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="navigation-wrap" id="navigation-wrap" data-menu>
+            <ul class="menu list">
+              <li class="menu__item">
+                <a href="./" class="link--current">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+
+            <!--  почта и телефон в шапке-->
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="contacts__icon" width="16px" height="12px">
+                    <use href="./img2/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:++38-096-111-11-11" class="link">
+                  <svg class="contacts__icon" width="10px" height="16px">
+                    <use href="./img2/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-        <!--  почта и телефон в шапке-->
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="contacts__icon" width="16px" height="12px">
-                <use href="./img2/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:++38-096-111-11-11" class="link">
-              <svg class="contacts__icon" width="10px" height="16px">
-                <use href="./img2/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -449,9 +468,9 @@
       <div class="container footer-flexbox">
         <div>
           <address class="adress">
-          <a href="WebStudio" class="footer__logo logo"
-            ><span class="logo__main">Web</span>Studio</a
-          >
+            <a href="WebStudio" class="footer__logo logo"
+              ><span class="logo__main">Web</span>Studio</a
+            >
             <span class="adress__name">г. Киев, пр-т Леси Украинки, 26</span>
             <a href="mailto:info@devstudio.com" class="adress__link"
               >info@devstudio.com</a
@@ -628,7 +647,8 @@
     </div>
 
     <!-- оформление форм  -->
-
+    
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

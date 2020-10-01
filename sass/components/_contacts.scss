@@ -1,8 +1,8 @@
 /* contacts*/
 .contacts {
-  display: none;
+  
 
-  // display: flex;
+  display: flex;
   align-items: center;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .contacts__icon {
-  margin-right: 10px;
+//  
   fill: currentColor;
 }
 
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .contacts__item:not(:last-child) {
+//   margin-right: 30px;
+// }

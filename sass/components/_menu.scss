@@ -1,12 +1,12 @@
  .menu {
 
-display: none;
+display:flex;
 }
 
-.menu__item:not(:last-child) {
-   font-weight: 500px;
-  margin-right: 50px;
-}
+// .menu__item:not(:last-child) {
+//    font-weight: 500px;
+//   margin-right: 50px;
+// }
 
 .menu .link {
   
