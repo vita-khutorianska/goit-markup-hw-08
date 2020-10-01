@@ -49,7 +49,7 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .container {
     width: 1200px;
     background-color: sienna;
