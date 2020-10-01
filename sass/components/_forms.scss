@@ -19,6 +19,8 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: $text-color;
+ 
+   
 }
 
 .form__input {
@@ -31,6 +33,8 @@
 
   transition: border-color $main-transition;
   outline: none;
+
+  
   
   &:focus,  &:hover {border-color: $acent;}
 

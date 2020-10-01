@@ -195,12 +195,16 @@ img {
 }
 
 .filters {
-  justify-content: center;
-  margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filters__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filters__item {
+  margin-bottom: 15px;
 }
 
 /* button*/
