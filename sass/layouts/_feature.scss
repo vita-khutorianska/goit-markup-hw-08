@@ -4,6 +4,9 @@
   @include for-size (tablet) {
      display: flex;
      flex-wrap: wrap;}
+     @media screen and (max-width: 1199px){
+       margin-right: -15px;
+    }
   }
 
     .feature__item {

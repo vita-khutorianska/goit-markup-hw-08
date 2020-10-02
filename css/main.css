@@ -286,6 +286,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .feature__list {
+    margin-right: -15px;
+  }
+}
+
 @media (min-width: 768px) {
   .feature__item {
     width: calc((100% - 2 * 30px) / 2);
