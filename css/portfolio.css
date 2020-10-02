@@ -217,6 +217,19 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filters {
+    margin-bottom: 34px;
+  }
+}
+
 /* button*/
 .filters__button {
   display: inline-block;
