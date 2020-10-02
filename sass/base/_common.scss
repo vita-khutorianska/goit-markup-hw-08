@@ -32,10 +32,11 @@ body {
   padding: 0;
   text-decoration: none;
 }
-// .flexbox {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+ .flexbox {
+   @include for-size(tablet){
+   display: flex;
+   flex-wrap: wrap;
+ }}
 .container {
   // width: 100%;
   padding: 0 15px;
