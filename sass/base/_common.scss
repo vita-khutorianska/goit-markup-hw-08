@@ -6,9 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
-
-
+  outline: 2px solid red;
   
 }
 
@@ -32,6 +30,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 // .flexbox {
 //   display: flex;
