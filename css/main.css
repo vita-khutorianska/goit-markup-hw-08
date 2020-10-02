@@ -30,7 +30,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -59,12 +58,6 @@ body {
 
 .section {
   padding: 60px 0;
-}
-
-@media (min-width: 480px) {
-  .section {
-    min-width: 450px;
-  }
 }
 
 img {
@@ -280,12 +273,39 @@ img {
 }
 
 /*Преимущества*/
-.feature {
-  padding-bottom: 0;
+@media (min-width: 768px) {
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature__item {
+    margin-bottom: 30px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+.feature__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .feature__item {
+    margin-right: 30px;
+    width: calc((100% - 30px * 3) / 4);
+  }
+}
+
+.feature__item:nth-child(4) {
+  margin-right: 0;
 }
 
 .feature__item::before {
-  display: block;
+  display: flex;
   content: "";
   height: 120px;
   margin-bottom: 30px;

@@ -1,27 +1,37 @@
 /*Преимущества*/
-.feature {
-  padding-bottom: 0;
-}
+  .feature__list {
 
-// .feature__item {
-  // width: calc((100% - 30px * 3) / 4);
-  // margin-right: 30px;
+  @include for-size (tablet) {
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: -15px;
 
-  
+  }}
 
-  
+    .feature__item {
+     @include for-size (tablet-only) {
+      
+         margin-bottom:30px;
+       width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;}
+        &:nth-last-child(-n + 2) {
+         margin-bottom: 0}
 
-  //   &:nth-child(4) {
-  // margin-right: 0;
-  
-//  }
+          @include for-size (desktop) {
+            margin-right: 30px;
+       width: calc((100% - 30px * 3) / 4);}
+   
+   &:nth-child(4) {
+   margin-right: 0;
+}}
 
  .feature__item::before {
-  display: block;
+   display: flex;
+ 
   content: "";
-  height: 120px;
-  margin-bottom: 30px;
 
+  height: 120px;
+   margin-bottom: 30px;
   background: $section-team-bg-color;
   background-position: center;
   background-repeat: no-repeat;

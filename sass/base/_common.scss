@@ -37,7 +37,7 @@ body {
 //   flex-wrap: wrap;
 // }
 .container {
-  width: 100%;
+  // width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -62,11 +62,11 @@ background-color: seagreen;
 
 
  .section {
-   padding: 60px 0;
+   padding: 60px 0;}
 
-    @include for-size(mobile){
-     min-width: 450px;
- }}
+//     @include for-size(mobile){
+//      min-width: 450px;
+//  }}
 img {
   display: block;
   max-width: 100%;
