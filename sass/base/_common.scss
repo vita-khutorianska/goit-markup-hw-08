@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
+ outline: 2px solid red;
   
 }
 
@@ -111,12 +111,19 @@ img {
   font-size: $title-fs;
   line-height: 1.17;
   text-align: center;
+  @include for-size (desktop) {
+     font-weight: 36px;
+     line-height: $link-subtitle-lh;
 }
 .subtitle {
   font-size: $main-fs;
   font-weight: $subtitle-btn-fw;
   line-height: $link-subtitle-lh;
   text-transform: uppercase;
+   
+
+   }
+
 }
 .text {
   font-size: $btn-text-fs;
