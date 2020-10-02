@@ -289,12 +289,14 @@ img {
 @media (min-width: 768px) {
   .feature__item {
     margin-right: 30px;
-    margin-bottom: 30px;
     width: calc((100% - 30px * 1) / 2);
   }
 }
 
 @media screen and (max-width: 1199px) {
+  .feature__item {
+    margin-bottom: 30px;
+  }
   .feature__item:nth-child(2n) {
     margin-right: 0;
   }
@@ -415,12 +417,14 @@ img {
 @media (min-width: 768px) {
   .team__item {
     margin-right: 30px;
-    margin-bottom: 30px;
     width: calc((100% - 30px * 1) / 2);
   }
 }
 
 @media screen and (max-width: 1199px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
   .team__item:nth-child(2n) {
     margin-right: 0;
   }
