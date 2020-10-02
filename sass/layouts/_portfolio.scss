@@ -14,13 +14,13 @@ a{text-decoration: none;}
 }
 
 .portfolio {
-  @media (max-width: 767px) {
-    margin-top: 40px;}
+ 
 }
 
 .portfolio__item {
   position: relative;
   width: 100%;
+
   
   // width: calc((100% - 30px * 2) / 3);
   // margin-right: 30px;
