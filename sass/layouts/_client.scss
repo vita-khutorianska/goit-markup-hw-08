@@ -2,26 +2,59 @@
 .client {
 display: flex;
  flex-wrap: wrap;
- 
- 
-
- &__item {
-   margin-right: 30px;
-   margin-bottom:30px ;
-   width: calc((100% - 30px * 1) / 2);}
    
-   &__item:nth-child(2n) {   margin-right: 0; }
- 
-  &__item:nth-last-child(-n + 2) {
-   margin-bottom: 0;
-  }}
+  @include for-size (desktop) {
+justify-content: space-between;}
 
+}
+ 
+ 
+
+ .client__item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+   @media screen and (max-width: 767px){
+    
+
+   width: calc((100% - 30px * 1) / 2);
+   
+   &:nth-child(2n) { margin-right: 0;}
+ 
+    &:nth-last-child(-n + 2) {
+    margin-bottom: 0;}
+}}
+
+
+   .client__item {
+   @include for-size (tablet) {
+   width: calc((100% - 30px * 2) / 3);
+   &:nth-child(3n) { margin-right: 0;}
+   &:nth-last-child(-n + 3) {
+    margin-bottom: 0;}}}
+
+   
+
+ 
+
+
+
+    
+     .client__item {
+       
+       @include for-size (desktop) {
+         width: calc((100% - 30px * 5) / 6);
+         &not:last-child {margin-right: 30px;}
+   margin-bottom: 0;
+      
+ }}
+ 
 
 .client__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  width: auto;
   height: 90px;
   border: 1px solid $icon-color;
   border-radius: 4px;
@@ -36,7 +69,7 @@ display: flex;
 
 
 .client__icon {
-  fill: $icon-color;
+  fill:$icon-color;
 
   transition: fill $main-transition;
   .client__link:hover &,
