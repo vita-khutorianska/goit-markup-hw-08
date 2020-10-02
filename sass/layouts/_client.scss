@@ -6,7 +6,6 @@ display: flex;
  
 
  &__item {
-   display: flex;
    margin-right: 30px;
    margin-bottom:30px ;
    width: calc((100% - 30px * 1) / 2);}
