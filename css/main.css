@@ -440,6 +440,7 @@ img {
 .team__text.text {
   margin-top: 0;
   margin-bottom: 16px;
+  line-height: 1.18;
   text-align: center;
 }
 
