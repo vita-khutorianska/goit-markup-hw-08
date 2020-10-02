@@ -245,12 +245,11 @@ img {
 
 .hero {
   display: flex;
+  max-width: 480px;
   height: 400px;
-  margin: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #c4c4c4;
@@ -271,6 +270,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /*Преимущества*/

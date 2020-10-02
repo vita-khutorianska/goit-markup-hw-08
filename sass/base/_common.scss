@@ -86,7 +86,7 @@ img {
 .btn {
   font-weight: $subtitle-btn-fw;
   font-size: $btn-text-fs;
-  line-height: 1.87;
+  line-height: $btn-lh;
   letter-spacing: 0.06em;
 
   color: $white;
