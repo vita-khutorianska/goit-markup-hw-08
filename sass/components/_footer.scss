@@ -4,8 +4,11 @@
   // align-items: center;
   background-color: $footer-bg-color;
 
+@include for-size (desktop) {
 
-
+  padding: 60px 0;
+   
+}
 }
 // .footer-flexbox {
 //   display: flex;

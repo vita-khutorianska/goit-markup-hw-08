@@ -1,15 +1,14 @@
 /*чем занимаються*/
 
 .section.work {
-  display: none;
-  // padding-top: 0;
-  // padding-bottom: 94px;
-   
-  
+  @media screen and (max-width: 1199px){
 
-  $tablet: 768px;
-  $desktop: 1280px;
-}
+  display: none;}
+   @include for-size (desktop) {
+
+  padding-top: 0;
+  
+}}
 
 .work__list {
   display: flex;

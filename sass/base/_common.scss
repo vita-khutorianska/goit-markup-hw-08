@@ -62,11 +62,13 @@ background-color: seagreen;
 
 
  .section {
-   padding: 60px 0;}
+   padding: 60px 0;
 
-//     @include for-size(mobile){
-//      min-width: 450px;
-//  }}
+ @include for-size (desktop) {
+
+  padding: 94px 0;
+   
+}}
 img {
   display: block;
   max-width: 100%;

@@ -3,19 +3,24 @@
 
   @include for-size (tablet) {
      display: flex;
-     flex-wrap: wrap;
-     margin-right: -15px;
+     flex-wrap: wrap;}
+     
+     
+      @media screen and (max-width: 1199px) {
+        margin-right: -15px;
+        
+     
 
   }}
 
     .feature__item {
-     @include for-size (tablet-only) {
-      
-         margin-bottom:30px;
-       width: calc((100% - 2 * 30px) / 2);
-        margin: 15px;}
-        &:nth-last-child(-n + 2) {
-         margin-bottom: 0}
+     @include for-size (tablet) {
+       width: calc((100% - 2 * 30px) / 2);}
+        @media screen and (max-width: 1199px){
+        margin: 15px;
+        margin-bottom:30px;
+      &:nth-last-child(-n + 2) {
+       margin-bottom: 0} }
 
           @include for-size (desktop) {
             margin-right: 30px;
@@ -58,7 +63,7 @@
 }
 
 .feature__text {
+  
   margin: 0;
   color: $text-color;
-
 }

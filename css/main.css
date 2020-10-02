@@ -60,6 +60,12 @@ body {
   padding: 60px 0;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -277,20 +283,29 @@ img {
   .feature__list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .feature__list {
     margin-right: -15px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .feature__item {
-    margin-bottom: 30px;
     width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
   }
 }
 
-.feature__item:nth-last-child(-n + 2) {
-  margin-bottom: 0;
+@media screen and (max-width: 1199px) {
+  .feature__item {
+    margin: 15px;
+    margin-bottom: 30px;
+  }
+  .feature__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -342,8 +357,16 @@ img {
 }
 
 /*чем занимаються*/
-.section.work {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .section.work {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section.work {
+    padding-top: 0;
+  }
 }
 
 .work__list {
@@ -515,6 +538,12 @@ img {
 .footer {
   display: flex;
   background-color: #2f303a;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+  }
 }
 
 .footer__logo.logo {

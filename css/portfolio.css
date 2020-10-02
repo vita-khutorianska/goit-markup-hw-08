@@ -60,6 +60,12 @@ body {
   padding: 60px 0;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -348,6 +354,12 @@ a {
 .footer {
   display: flex;
   background-color: #2f303a;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+  }
 }
 
 .footer__logo.logo {
