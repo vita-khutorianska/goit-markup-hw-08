@@ -657,12 +657,6 @@ img {
   padding: 60px 0;
 }
 
-@media (min-width: 1200px) {
-  .footer {
-    padding: 60px 0;
-  }
-}
-
 .footer__logo.logo {
   margin-bottom: 20px;
   color: #ffffff;
@@ -681,19 +675,28 @@ img {
   align-items: center;
   padding-bottom: 60px;
   font-style: normal;
+  color: #ffffff;
 }
 
-.adress__name {
-  color: #ffffff;
+@media (min-width: 1200px) {
+  .adress {
+    margin-left: 40px;
+  }
 }
 
 .adress__link {
   display: block;
   margin-top: 8px 0;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress__link:hover, .adress__link:focus {
+  color: #2196f3;
 }
 
 .footer-social {
+  display: flex;
   padding: 60px 0;
 }
 
@@ -707,6 +710,12 @@ img {
   .footer__tablet {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
   }
 }
 
