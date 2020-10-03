@@ -653,12 +653,51 @@ img {
 
 .footer {
   background-color: #2f303a;
+}
+
+.footer__social {
   padding: 60px 0;
+}
+
+@media (min-width: 1200px) {
+  .footer__social {
+    margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 79px;
+    padding-right: 89px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__tablet {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__flaxbox {
+    display: flex;
+    align-items: baseline;
+    padding: 60px 0;
+  }
 }
 
 .footer__logo.logo {
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .footer__logo.logo {
+    margin-right: 156px;
+  }
 }
 
 .footer__subtitle.subtitle {
@@ -677,12 +716,6 @@ img {
   color: #ffffff;
 }
 
-@media (min-width: 1200px) {
-  .adress {
-    display: inline-flex;
-  }
-}
-
 .adress__link {
   display: block;
   margin-top: 8px;
@@ -694,37 +727,9 @@ img {
   color: #2196f3;
 }
 
-.footer-social {
-  padding: 60px 0;
-}
-
 @media (min-width: 1200px) {
-  .footer-social {
-    display: inline-flex;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 79px;
-    padding-right: 89px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .subscribe {
-    display: flex;
+  .adress__link {
+    margin-top: 9px;
   }
 }
 
@@ -732,6 +737,13 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .subscribe__form {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .subscribe__mail {
@@ -751,6 +763,14 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 1200px) {
+  .subscribe__mail::placeholder {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .subscribe__btn.btn {

@@ -1,11 +1,19 @@
-.subscribe{
-  @include for-size (desktop){
-    display: flex;
-}}
+// .subscribe{
+//   @include for-size (desktop){
+//     display: flex;
+//     justify-content: flex-end;
+   
+// }}
  .subscribe__form {
  display: flex;
  align-items: center;
  flex-direction: column;
+ @include for-size (desktop){
+   flex-direction: row;
+   align-items: center;
+  
+   
+ }
   
  }
 
@@ -27,6 +35,11 @@
   font-size: $btn-text-fs;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+  @include for-size (desktop){
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 }
 

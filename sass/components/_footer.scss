@@ -1,11 +1,38 @@
 .footer {
   background-color: $footer-bg-color;
-  padding: 60px 0;
+ 
 }
-
+.footer__social {
+   padding: 60px 0;
+   @include for-size (desktop){
+      margin-right: 93px;
+ }}
+ 
+//  .footer__tablet
+ .footer__tablet{
+ @media screen and (min-width: 768px) 
+  and (max-width: 1199px)
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 79px;
+  padding-right: 89px;  }
+  @include for-size (desktop){ justify-content: flex-start; 
+   }
+  }
+.footer__flaxbox{
+  @include for-size (desktop){
+    display: flex;
+    align-items: baseline;
+    padding:60px 0;
+  }
+}
 .footer__logo.logo {
   margin-bottom: 20px;
   color: $white;
+   @include for-size (desktop){
+     margin-right: 156px;}
 }
 .footer__subtitle.subtitle {
   display: flex;
@@ -21,9 +48,8 @@
   padding-bottom: 60px;
  font-style: normal;
  color: $white;
- @include for-size (desktop){
-   display: inline-flex;
- }}
+//  @include for-size (desktop){
+ }
 .adress__link {
   display: block;
   margin-top: 8px;
@@ -31,32 +57,13 @@
    transition: color $main-transition;
  &:hover,
  &:focus {
-   color: $acent;}}
+   color: $acent;}
+
+   @include for-size (desktop){
+   margin-top: 9px;}
+
+  }
  
   //  footer-social
 
-.footer-social {
-   padding: 60px 0;
-   @include for-size (desktop){
-     display: inline-flex;
-  
- }}
- 
-//  .footer__tablet
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
-  .footer__tablet {
- display: flex;
- justify-content: space-between;
- align-items: baseline;
- padding-left: 79px;
- padding-right: 89px;
- }}
-
- @include for-size (desktop){
- .footer
- {display:flex;
-  justify-content: space-between;
-  padding: 60px 0;
- }
- }
