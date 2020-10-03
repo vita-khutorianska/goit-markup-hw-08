@@ -3,12 +3,11 @@
   // justify-content: center;
   // align-items: center;
   background-color: $footer-bg-color;
+  padding: 60px 0;
 
 @include for-size (desktop) {
 
   padding: 60px 0;
-  
-   
 }
 }
 // .footer-flexbox {
@@ -64,4 +63,12 @@
 // }
 .footer-social {
    padding: 60px 0;
+ }
+.footer__tablet{
+@media screen and (min-width: 768px) and (max-width: 1199px){
+ display: flex;
+ justify-content: space-between;}
+ align-items: baseline;
+ padding-left: 79px;
+ padding-right: 89px;
  }

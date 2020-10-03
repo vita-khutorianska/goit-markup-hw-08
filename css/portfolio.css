@@ -410,6 +410,7 @@ a {
 .footer {
   display: flex;
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 @media (min-width: 1200px) {
@@ -450,6 +451,19 @@ a {
 
 .footer-social {
   padding: 60px 0;
+}
+
+.footer__tablet {
+  align-items: baseline;
+  padding-left: 79px;
+  padding-right: 89px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .subscribe__form {
