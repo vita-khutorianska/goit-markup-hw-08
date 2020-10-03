@@ -1,5 +1,4 @@
 .footer {
-  display: flex;
   background-color: $footer-bg-color;
   padding: 60px 0;
 }
@@ -23,18 +22,12 @@
  font-style: normal;
  color: $white;
  @include for-size (desktop){
-   margin-left: 40px;
-
- }
- 
-
-}
-
+   display: inline-flex;
+ }}
 .adress__link {
   display: block;
-  margin-top: 8px 0;
+  margin-top: 8px;
   color: $footer-tel-mail-color;
-  
    transition: color $main-transition;
  &:hover,
  &:focus {
@@ -43,27 +36,27 @@
   //  footer-social
 
 .footer-social {
-  display:flex;
    padding: 60px 0;
- }
+   @include for-size (desktop){
+     display: inline-flex;
+  
+ }}
  
 //  .footer__tablet
 
-.footer__tablet{
 @media screen and (min-width: 768px) and (max-width: 1199px){
+  .footer__tablet {
  display: flex;
- justify-content: space-between;}
+ justify-content: space-between;
  align-items: baseline;
  padding-left: 79px;
  padding-right: 89px;
- }
+ }}
 
  @include for-size (desktop){
- .footer{
- 
+ .footer
+ {display:flex;
+  justify-content: space-between;
   padding: 60px 0;
-  
-  
-
  }
  }

@@ -1,4 +1,7 @@
-
+.subscribe{
+  @include for-size (desktop){
+    display: flex;
+}}
  .subscribe__form {
  display: flex;
  align-items: center;
