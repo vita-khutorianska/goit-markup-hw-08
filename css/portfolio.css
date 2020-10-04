@@ -722,6 +722,12 @@ a {
   min-width: 200px;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe__btn.btn {
+    margin-top: 20px;
+  }
+}
+
 .subscribe__icon {
   fill: #ffffff;
   margin-left: 10px;
@@ -745,6 +751,4 @@ a {
     display: flex;
   }
 }
-
-/* outline-color: transparent; */
 /*# sourceMappingURL=portfolio.css.map */

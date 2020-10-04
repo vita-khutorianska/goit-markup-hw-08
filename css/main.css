@@ -913,6 +913,12 @@ img {
   min-width: 200px;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe__btn.btn {
+    margin-top: 20px;
+  }
+}
+
 .subscribe__icon {
   fill: #ffffff;
   margin-left: 10px;
@@ -937,7 +943,6 @@ img {
   }
 }
 
-/* outline-color: transparent; */
 .backdrop {
   position: fixed;
   top: 0;
