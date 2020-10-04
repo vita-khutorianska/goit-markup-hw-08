@@ -16,7 +16,7 @@
   </head>
   <body>
     <!--- шапка-->
-    <header class="header">
+    <header class="page-header">
       <div class="container  header__nav" >
        
           <a href="./index.html" class="logo">
@@ -750,5 +750,12 @@
 
     <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>
