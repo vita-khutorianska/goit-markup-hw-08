@@ -662,6 +662,7 @@ a {
 }
 
 .footer__subtitle {
+  text-align: center;
   display: block;
   font-weight: 700;
   line-height: 1.14;
