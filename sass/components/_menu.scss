@@ -1,25 +1,38 @@
-//  .menu {
+ .menu {
+   font-weight: 500px;
+   @media screen and (max-width: 767px){
+     padding: 60px 0;
+   }
+   @include for-size(tablet) {
+     display: flex;
+    align-items: center;
+     justify-content: flex-start;
+   }
+   @media screen and (min-width: 767px) and (max-width: 1199px){
+     margin-left: 88px;
+    margin-right: 84px;
+   }
+    @include for-size(tablet){
+       margin-left: 93x;
+    margin-right: 305;
+    }
+ }
+ .menu__item {
+   
+   @media screen and (max-width: 767px){
+    &:not(:last-child)
+     {margin-bottom: 40px;}}
+     @include for-size(tablet){
+       &:not(:last-child)
+     {margin-right: 50px;}
 
-// display:flex;
-// flex-direction: column;
-// }
 
-// .menu__item:not(:last-child) {
-//    font-weight: 500px;
-//   margin-right: 50px;
-// }
-
-// .menu__item  {
- 
-
+    }}
+    .menu__item {
+       &:hover,
+       &:focus {
+      color:$acent;
+    }}
   
-//   // display: block;
-//   // padding: 32px 0;
-  
 
-//   &:hover,
-//   &:focus {
-//   color:$acent;
-// }
-// }
 
