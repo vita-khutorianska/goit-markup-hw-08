@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
- outline: 2px solid red;
+//  outline: 2px solid red;
   
 }
 
@@ -57,7 +57,6 @@ body {
 
   @include for-size(desktop) {
     width: 1200px;
-    background-color: sienna;
   }
 }
 
