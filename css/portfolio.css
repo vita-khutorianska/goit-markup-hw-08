@@ -45,14 +45,12 @@ body {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: #adbce9;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: seagreen;
   }
 }
 
@@ -170,11 +168,45 @@ img {
   border: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767) {
+  .header {
+    padding: 10px 0px;
+  }
+}
+
 .header__nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-height: 60px;
+  align-items: center;
+}
+
+.menu__container {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    padding: 60px 0;
+  }
+  .menu__container.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -192,23 +224,37 @@ img {
   color: #2196f3;
 }
 
-.menu__item:hover, .menu__item:focus {
-  color: #2196f3;
+.nav-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .nav-button {
+    display: none;
+  }
+}
+
+.nav-button .icon-cross {
+  display: none;
+}
+
+.nav-button.is-open .icon-cross {
+  display: block;
+}
+
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+
+.nav__icons:hover, .nav__icons:focus {
+  fill: #2196f3;
 }
 
 /* contacts*/
-.contacts .link {
-  color: #757575;
-}
-
-.contacts .link:hover, .contacts .link:focus {
-  color: #2196f3;
-}
-
-.contacts__icon {
-  fill: currentColor;
-}
-
 .filters {
   display: flex;
   flex-wrap: wrap;

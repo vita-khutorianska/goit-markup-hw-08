@@ -46,12 +46,12 @@ body {
 
   @include for-size(mobile) {
     width: 480px;
-    background-color: rgb(173, 188, 233);
+    
   }
 
   @include for-size(tablet) {
     width: 768px;
-background-color: seagreen;
+
   }
 
 

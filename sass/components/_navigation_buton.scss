@@ -1,0 +1,31 @@
+
+ .nav-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.nav-button .icon-cross {
+  display: none;
+}
+
+.nav-button.is-open .icon-cross {
+  display: block;
+}
+
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+.nav__icons {
+ 
+
+   &:hover,
+    &:focus {
+      fill: $acent;
+}}
