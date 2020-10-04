@@ -1,15 +1,18 @@
 .logo {
   // margin-right: 93px;
-  display: block;
-  color: $primery-text-color;
+  // display: block;
+  color: $logo-color;
   font-family: $logo-font-family;
-  padding:16px 0;
-
   font-weight: $subtitle-btn-fw;
   font-size: 24px;
   line-height: 1.16;
-
   text-decoration: none;
+  @include for-size(desktop){
+     font-size: 26px;
+  line-height: 1.19;
+
+  }
+  // padding: 26px 0;
 }
 .logo__main {
   color: $acent;
