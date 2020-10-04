@@ -8,7 +8,11 @@
 }
 .footer__logo.logo {  
    color: $white;
-  text-align: center;}
+  text-align: center;
+@include for-size(desktop) {
+     
+    margin-right: 156px;
+   }}
 
   .footer__address{
      @media screen and (min-width: 767px) 
@@ -16,10 +20,7 @@
      { margin-left: 76px;
     margin-right: 165px;}
 
-     @include for-size(desktop) {
-      width: 270px;
-    margin-right: 70px;
-   }
+     
   }
   
 .address {
@@ -53,7 +54,7 @@
 .footer__social {
   padding-bottom: 60px;
   @include for-size(desktop) {
-      width: 270px;
+     
     margin-right: 93px;
    }
 }
