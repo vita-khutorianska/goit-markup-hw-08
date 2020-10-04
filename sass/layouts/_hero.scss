@@ -11,57 +11,36 @@
 
   background-color: $bcg-hero;
   
-   @include for-size(tablet-only){
-     min-width: 480px;}
-  
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient( $background, $background),
     url(../img2/mobile/hero-img.jpg);
-
     @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
-   
-      background-image: url(../img2/mobile/hero-img@2x.jpg);
-    }
-    
-
-    @include for-size(tablet) {
-      //  width: 768px;
-      background-image: 
-    //   linear-gradient(
-    //   to right,
-    //   rgba(47, 48, 58, 0.4),
-    //   rgba(47, 48, 58, 0.4)
-    // ), 
-    url(../img2/tablet/hero-img.jpg);}
-
+   screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){ 
+    background-image: linear-gradient( $background, $background),
+   url(../img2/mobile/hero-img@2x.jpg);
+   }
+  @include for-size(tablet) {
+   background-image: linear-gradient( $background, $background),
+    url(../img2/tablet/hero-img.jpg);
    @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
-   
-      background-image: url(../img2/tablet/hero-img@2x.jpg);
-    }
-    @include for-size(desktop){
-   width: 1600px;
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image:linear-gradient( $background, $background), url(../img2/tablet/hero-img@2x.jpg);
+    }}
+  
+  @include for-size(desktop) {
     height: 600px;
-      background-image: 
-    //   linear-gradient(
-    //   to right,
-    //   rgba(47, 48, 58, 0.4),
-    //   rgba(47, 48, 58, 0.4)
-    // ),
-     url(../img2/desktop/hero-img.jpg);}
-
+   background-image:linear-gradient( $background, $background), 
+    url(../img2/desktop/hero-Img.jpg);
    @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
-   
-      background-image: url(../img2/desktop/hero-img@2x.jpg);
-  }}
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image:linear-gradient( $background, $background), url(../img2/desktop/hero-Img@2x.jpg);
+    }}}
 
   .hero .btn {
     padding: 10px 32px;
