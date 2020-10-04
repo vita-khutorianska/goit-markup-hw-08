@@ -595,9 +595,22 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer__address {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+}
+
 .address {
   font-style: normal;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address {
+    padding-bottom: 60px;
+  }
 }
 
 .adress__item {
@@ -626,10 +639,8 @@ a {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer__social {
-    padding: 60px  0;
-  }
+.footer__social {
+  padding-bottom: 60px;
 }
 
 .footer__subtitle {
@@ -637,6 +648,14 @@ a {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.14;
+}
+
+@media (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .subscribe__mail {
