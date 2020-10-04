@@ -13,23 +13,39 @@
   font-size: $btn-text-fs;
   padding-left: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);}}
+  color: rgba(255, 255, 255, 0.6);
+   @include for-size(desktop) {
+      width: 358px;
+    margin-right: 12px;
+   }
+  }
+}
 
    .subscribe__btn.btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     height: 50px;
     margin-right: auto;
     margin-left: auto;
-     margin-top: 20px;
-}
+     
+     }
+
 .subscribe__icon {
    fill: $white;
    margin-left: 10px;
    text-align: center;
  }
+ .subscribe {
+    display: flex;
+    flex-direction: row;
+}
+.subscribe .footer__subtitle{
+    display: flex;
+    flex-direction: row;
+}
+
+
     // align-items: center;
 
 //    padding-left: 29px;
@@ -54,14 +70,7 @@
 //     justify-content: flex-end;
    
 // }}
-//  .subscribe__form {
-//  display: flex;
-//  align-items: center;
-//  flex-direction: column;
-//  @include for-size (desktop){
-//    flex-direction: row;
-//    align-items: center;
-  
+//  
    
 //  }
 
