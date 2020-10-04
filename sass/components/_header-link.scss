@@ -1,14 +1,21 @@
 .link {
-  @include font(18px, 1.16, 500);
+  color: $primery-text-color;
+  font-weight: 500;
    letter-spacing: 0.02em;
- 
- color: $primery-text-color;
-  text-decoration: none;
+    text-decoration: none;
   transition: color $main-transition;
-padding: 8px 0;
+
+  @media screen and (max-width: 767px) {
+     font-size: 18px;
+     line-height:1.17 ;
+     padding: 8px 0;
+  }
+    
+  
  @include for-size(tablet){
    padding: 32px 0;
- }}
+  line-height: $link-subtitle-lh;} 
+ }
  
 .link.link--current {
  position: relative;
