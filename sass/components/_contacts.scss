@@ -1,27 +1,67 @@
 
  .contacts {
+   color: $text-color;
+   @media screen and (max-width: 767px){
+     padding-top: 60px;
+   }
+   
    @media screen and (min-width: 767px) and (max-width: 1199px){
      font-size: 12px;
    }
+
   @include for-size(desktop){
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
-  }
+    margin-left: 305px;
+  }}
 
- }
+  .contacts__item {
+    @media screen and (max-width: 767px){
+      &:not(:last-child) {
+    margin-bottom: 16px;}}
+
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+     &:not(:last-child) {
+    margin-bottom: 16px;
+  padding:0}}
+
+    @media screen and (min-width: 1200px) {
+     &:not(:last-child) {
+    margin-right: 30px;}
+  }}
+//   .&:hover,
+// //     &:focus {
+// //   color: $acent;
+// // }
+
+  .contacts .link {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+ &:hover,
+    &:focus {
+  color: $acent;}
+}
+.contacts__icon {
+  fill: currentColor;
+   @media screen and (max-width: 767px){
+     margin-right: 10px;
+   }
+   @include for-size(tablet){
+     margin-right: 8px;
+   }
+  
+}
   
 
-// //  display: flex;
-// //  flex-direction: column;
-// }
+ 
+  
 
-// .contacts .link {
 
-//   // display: flex;
-//   // align-items: center;
 
-//   color: $text-color;
 
 //     &:hover,
 //     &:focus {
@@ -30,12 +70,9 @@
 
 // }
 
-// .contacts__icon {
+// {
 // //  
 //   fill: currentColor;
 // }
 
 
-// // .contacts__item:not(:last-child) {
-// //   margin-right: 30px;
-// // }

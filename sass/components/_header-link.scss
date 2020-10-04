@@ -8,12 +8,11 @@
   @media screen and (max-width: 767px) {
      font-size: 18px;
      line-height:1.17 ;
-     padding: 8px 0;
   }
     
   
  @include for-size(tablet){
-   padding: 32px 0;
+   
   line-height: $link-subtitle-lh;} 
  }
  

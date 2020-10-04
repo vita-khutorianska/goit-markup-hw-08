@@ -13,10 +13,7 @@
      margin-left: 88px;
     margin-right: 84px;
    }
-    @include for-size(desktop){
-       margin-left: 93x;
-    margin-right: 305;
-    }
+   
  }
  .menu__item {
    
@@ -29,11 +26,17 @@
 
 
     }}
-    // .menu__item {
-    //    &:hover,
-    //    &:focus {
-    //   color:$acent;
-    // }}
+    .menu__item .link {
+      @media screen and (max-width: 767px) {
+         padding: 8px 0;
+      }
+      @include for-size(tablet){padding: 32px 0;}
+    }
+     .menu .link {
+        &:hover,
+        &:focus {
+       color:$acent;
+     }}
   
 
 
