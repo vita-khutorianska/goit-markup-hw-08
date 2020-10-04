@@ -37,27 +37,27 @@
    }
 }
 
-// foter link
-.social__link--white {
-  display: flex;
-  justify-content: center;
+ // foter link
+ .social__link--white {
+   display: flex;
+   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+   width: 44px;
+   height: 44px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
 
-  transition: background-color $main-transition;
+   transition: background-color $main-transition;
 
-  &:hover,
-  &:focus {
-   background-color: $acent;
-  }
-}
-.social__icon--white {
-  width: 20px;
-  height: 20px;
-  fill: $white;
- transition: fill $main-transition;
-}
+   &:hover,
+   &:focus {
+    background-color: $acent;
+   }
+ }
+ .social__icon--white 
+ {width: 20px;
+   height: 20px;
+   fill: $white;
+  transition: fill $main-transition;
+ }
