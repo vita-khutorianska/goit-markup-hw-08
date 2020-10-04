@@ -50,13 +50,18 @@
     
  @include for-size(desktop){
      display: flex;
- 
  }
   
 }
  
 .subscribe .footer__subtitle{
+  
+
+  @include for-size(desktop){
     display: flex;
+  }
+  
+    
     
 }
 

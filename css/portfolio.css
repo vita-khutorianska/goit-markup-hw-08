@@ -160,6 +160,12 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .link.link--current {
+    padding: 8px 0;
+  }
+}
+
 .link.link--current::after {
   position: absolute;
   content: "";
@@ -658,9 +664,9 @@ a {
 .footer__subtitle {
   display: block;
   font-weight: 700;
-  margin-bottom: 20px;
   line-height: 1.14;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -733,8 +739,10 @@ a {
   }
 }
 
-.subscribe .footer__subtitle {
-  display: flex;
+@media (min-width: 1200px) {
+  .subscribe .footer__subtitle {
+    display: flex;
+  }
 }
 
 /* outline-color: transparent; */

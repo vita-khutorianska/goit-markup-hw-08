@@ -17,11 +17,14 @@
  }
  
 .link.link--current {
+
  position: relative;
   display: inline-block;
   
    text-decoration: none;
   color: $acent;
+   @media screen and (max-width: 767px) {
+         padding: 8px 0;}
 
 
   &::after {

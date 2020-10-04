@@ -9,11 +9,13 @@
   opacity: 1;
   transition: opacity $main-transition;
 
-  // @media screen and ( max-width: 768px) {
-    // padding: 94px 15px;
-    overflow-y: scroll;
-
-  // }
+   @media screen and ( max-width: 768px) {
+     padding: 94px 15px;
+    
+   }
+    @media screen and ( max-width: 768px){
+      overflow-y: scroll;
+    }
 }
 
 .backdrop.is-hidden {
