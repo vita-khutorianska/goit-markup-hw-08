@@ -1,12 +1,18 @@
-.header {
-   position: relative;
+.page-header {
+  //  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: $white;
   
    text-decoration: none;
 
-   border: 1px solid #ececec;
-  @media screen and (max-width: 767) {
-   padding: 10px 0px;
- }}
+   border-bottom: 1px solid #ececec;
+ }
+ 
+ 
+ 
   
 
   .header__nav {
@@ -20,6 +26,7 @@
 .menu__container {
   background-color:$white;
   text-align: center;
+  
 
   @media screen and (max-width: 767px) {
     display: none;

@@ -175,16 +175,14 @@ img {
   background: #2196f3;
 }
 
-.header {
-  position: relative;
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
   text-decoration: none;
-  border: 1px solid #ececec;
-}
-
-@media screen and (max-width: 767) {
-  .header {
-    padding: 10px 0px;
-  }
+  border-bottom: 1px solid #ececec;
 }
 
 .header__nav {
@@ -228,6 +226,12 @@ img {
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
+}
+
+@media screen and (max-width: 767) {
+  .logo {
+    padding: 16px 0px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -958,7 +962,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .backdrop {
     overflow-y: scroll;
   }
