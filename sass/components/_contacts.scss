@@ -1,13 +1,11 @@
 
  .contacts {
-   color: $text-color;
+   
    @media screen and (max-width: 767px){
      padding-top: 60px;
    }
    
-   @media screen and (min-width: 767px) and (max-width: 1199px){
-     font-size: 12px;
-   }
+   
 
   @include for-size(desktop){
     display: flex;
@@ -17,6 +15,7 @@
   }}
 
   .contacts__item {
+   
     @media screen and (max-width: 767px){
       &:not(:last-child) {
     margin-bottom: 16px;}}
@@ -33,6 +32,8 @@
 
 
   .contacts .link {
+     color: $text-color;
+
 
 display: flex;
 align-items: center;
@@ -41,6 +42,9 @@ justify-content: center;
  &:hover,
     &:focus {
   color: $acent;}
+  @media screen and (min-width: 767px) and (max-width: 1199px){
+     font-size: 12px;
+   }
 }
 .contacts__icon {
   fill: currentColor;

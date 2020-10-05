@@ -330,19 +330,9 @@ img {
   color: #2196f3;
 }
 
-.contacts {
-  color: #757575;
-}
-
 @media screen and (max-width: 767px) {
   .contacts {
     padding-top: 60px;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .contacts {
-    font-size: 12px;
   }
 }
 
@@ -375,6 +365,7 @@ img {
 }
 
 .contacts .link {
+  color: #757575;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,6 +373,12 @@ img {
 
 .contacts .link:hover, .contacts .link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts .link {
+    font-size: 12px;
+  }
 }
 
 .contacts__icon {
@@ -1128,6 +1125,12 @@ img {
 
 .checkbox {
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .checkbox__text::before {
