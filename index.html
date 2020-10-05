@@ -17,30 +17,30 @@
   <body>
     <!--- шапка-->
     <header class="page-header">
-      <div class="container  header__nav" >
-       
-          <a href="./index.html" lang="en" class="logo">
-            <span class="logo__main">Web</span
-            ><span class="logo__part">Studio</span>
-          </a>
-          <button
-            type="button"
-            class="nav-button"
-            aria-expanded="false"
-            aria-controls="menu__container"
-            data-nav-button
+      <div class="container header__nav">
+        <a href="./index.html" lang="en" class="logo">
+          <span class="logo__main">Web</span
+          ><span class="logo__part">Studio</span>
+        </a>
+        <button
+          type="button"
+          class="nav-button"
+          aria-expanded="false"
+          aria-controls="menu__container"
+          data-nav-button
+        >
+          <svg
+            class="nav__icons"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-            <svg class="nav__icons"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use class="icon-cross" href="./img2/sprite.svg#icon-cross"></use>
-              <use class="icon-menu" href="./img2/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <div class="menu__container" id="menu__container" data-menu>
-            <nav>
+            <use class="icon-cross" href="./img2/sprite.svg#icon-cross"></use>
+            <use class="icon-menu" href="./img2/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu__container" id="menu__container" data-menu>
+          <nav>
             <ul class="menu list">
               <li class="menu__item">
                 <a href="./" class="link link--current">Студия</a>
@@ -52,29 +52,28 @@
                 <a href="" class="link">Контакты</a>
               </li>
             </ul>
-            </nav>
+          </nav>
 
-            <!--  почта и телефон в шапке-->
-            <ul class="contacts list">
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="link">
-                  <svg class="contacts__icon" width="16px" height="12px">
-                    <use href="./img2/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a href="tel:++38-096-111-11-11" class="link">
-                  <svg class="contacts__icon" width="10px" height="16px">
-                    <use href="./img2/sprite.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-        
+          <!--  почта и телефон в шапке-->
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="contacts__icon" width="16px" height="12px">
+                  <use href="./img2/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="tel:++38-096-111-11-11" class="link">
+                <svg class="contacts__icon" width="10px" height="16px">
+                  <use href="./img2/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -85,7 +84,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button"  class="btn" data-modal-open>Заказать услугу</button>
+          <button type="button" class="btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--- Advantages-->
@@ -133,10 +134,18 @@
             <li class="work__item">
               <div class="work__thumb">
                 <picture>
-                  <source srcset="./img2/desktop/img-work1.jpg 1x,
-                  ./img2/desktop/img-work1@2x.jpg 2x"media="(min-width: 1200px)"
+                  <source
+                    srcset="
+                      ./img2/desktop/img-work1.jpg    1x,
+                      ./img2/desktop/img-work1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
                   />
-                  <img src="./img2/desktop/img-work1.jpg" alt="компьютер на столе" width="370" />
+                  <img
+                    src="./img2/desktop/img-work1.jpg"
+                    alt="компьютер на столе"
+                    width="370"
+                  />
                 </picture>
                 <p class="work__subtitle subtitle">Десктопные приложения</p>
               </div>
@@ -144,20 +153,38 @@
 
             <li class="work__item">
               <div class="work__thumb">
-              <picture>
-                <source srcset="./img2/desktop/img-work2.jpg 1x,
-                ./img2/desktop/img-work2@2x.jpg 2x" media="(min-width: 1200px)" />
-                <img src="./img2/desktop/img-work2.jpg" alt="телефон в руке" width="370" />
-              </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./img2/desktop/img-work2.jpg    1x,
+                      ./img2/desktop/img-work2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img2/desktop/img-work2.jpg"
+                    alt="телефон в руке"
+                    width="370"
+                  />
+                </picture>
                 <p class="work__subtitle subtitle">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__thumb">
                 <picture>
-                  <source srcset="./img2/desktop/img-work3.jpg 1x,
-                   ./img2/desktop/img-work3@2x.jpg 2x" media="(min-width: 1200px)" />
-                  <img src="./img2/desktop/img-work3.jpg" alt="компьютер на столе" width="370" />
+                  <source
+                    srcset="
+                      ./img2/desktop/img-work3.jpg    1x,
+                      ./img2/desktop/img-work3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./img2/desktop/img-work3.jpg"
+                    alt="компьютер на столе"
+                    width="370"
+                  />
                 </picture>
                 <p class="work__subtitle subtitle">Дизайнерские решения</p>
               </div>
@@ -195,7 +222,6 @@
                 />
                 <img
                   src="./img2/mobile/img-team1.jpg"
-                  width=""
                   alt="фото игорь демьяненко"
                 />
               </picture>
@@ -280,7 +306,6 @@
                 />
                 <img
                   src="./img2/mobile/img-team2.jpg"
-                  width=""
                   alt="фото Ольга Репина"
                 />
               </picture>
@@ -364,7 +389,6 @@
                 />
                 <img
                   src="./img2/mobile/img-team3.jpg"
-                  width=""
                   alt="фото Николай Тарасов"
                 />
               </picture>
@@ -448,7 +472,6 @@
                 />
                 <img
                   src="./img2/mobile/img-team4.jpg"
-                  width=""
                   alt="фото Михаил Ермаков"
                 />
               </picture>
@@ -565,19 +588,26 @@
     <!--- футер-->
 
     <footer class="footer">
-      <div class="container  footer__desktop">
+      <div class="container footer__desktop">
         <div class="footer__tablet">
           <div class="footer__address">
-            <a lang="en" href="WebStudio" class="footer__logo logo"><span class="logo__main">Web</span>Studio</a>
-          <address class="address" >
-          <span class="adress__item">г. Киев, пр-т Леси Украинки, 26</span>
-          
-          <a href="mailto:info@devstudio.com" class="adress__link adress__item">info@devstudio.com</a>
-          <a href="tel:++38-096-111-11-11" class="adress__link adress__item">+38-096-111-11-11
-          </a>
-          </address>
-        </div>
-            
+            <a lang="en" href="WebStudio" class="footer__logo logo"
+              ><span class="logo__main">Web</span>Studio</a
+            >
+            <address class="address">
+              <span class="adress__item">г. Киев, пр-т Леси Украинки, 26</span>
+
+              <a
+                href="mailto:info@devstudio.com"
+                class="adress__link adress__item"
+                >info@devstudio.com</a
+              >
+              <a href="tel:++38-096-111-11-11" class="adress__link adress__item"
+                >+38-096-111-11-11
+              </a>
+            </address>
+          </div>
+
           <div class="footer__social">
             <b class="footer__subtitle subtitle">присоединяйтесь</b>
             <ul class="social list">
@@ -667,28 +697,35 @@
 
         <!-- forms -->
 
-<form class="form" autocomplete="off">
-  <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
-  <!-- <div class="form__field"> -->
-        <label class="form__field">
-          <span class="form__label">Имя</span>
-          <span class="form__area">
-            <input class="form__input" type="tel" name="tel" placeholder=" " />
-          <svg class="form__icon" width="18px" height="18px">
-            <use href="./img2/sprite.svg#icon-person"></use>
-          </svg>
-         
-          </span>
-        </label>
-            
-          
+        <form class="form" autocomplete="off">
+          <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+          <!-- <div class="form__field"> -->
+          <label class="form__field">
+            <span class="form__label">Имя</span>
+            <span class="form__area">
+              <input
+                class="form__input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="./img2/sprite.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
 
           <!-- телефон -->
 
           <label class="form__field">
             <span class="form__label">Телефон</span>
-            <span class="form__area" >
-              <input class="form__input" type="tel" name="tel" placeholder=" " />
+            <span class="form__area">
+              <input
+                class="form__input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
               <svg class="form__icon" width="18px" height="18px">
                 <use href="./img2/sprite.svg#icon-phone"></use>
               </svg>
@@ -700,19 +737,29 @@
           <label class="form__field">
             <span class="form__label">Почта</span>
             <span class="form__area">
-              <input class="form__input" type="tel" name="tel" placeholder=" " />
+              <input
+                class="form__input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
               <svg class="form__icon" width="18px" height="18px">
                 <use href="./img2/sprite.svg#icon-email"></use>
               </svg>
             </span>
           </label>
-         
 
           <!-- comments -->
           <label class="form__field">
             <span class="form__label">Комментарий</span>
             <span class="form__area">
-                <textarea class="form__textarea" name="comments" id="comments" rows="7" placeholder="Введите текст"></textarea>
+              <textarea
+                class="form__textarea"
+                name="comments"
+                id="comments"
+                rows="7"
+                placeholder="Введите текст"
+              ></textarea>
             </span>
           </label>
           <!-- согласие -->
