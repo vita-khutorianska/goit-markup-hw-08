@@ -9,7 +9,7 @@
  
  @include for-size (tablet){
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1);}
   @media screen and(max_width: 1199px) {
