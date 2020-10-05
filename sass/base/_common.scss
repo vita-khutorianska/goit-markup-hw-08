@@ -49,18 +49,20 @@ body {
 
 
   @include for-size(mobile) {
-    width: 480px;
+    max-width: 462px;
+    // width: 480px;
     
   }
 
   @include for-size(tablet) {
-    width: 768px;
-
+    max-width: 750px;
+    // width: 768px;
   }
 
 
   @include for-size(desktop) {
-    width: 1200px;
+    // width: 1200px;
+    max-width: 1182px;
   }
 }
 
