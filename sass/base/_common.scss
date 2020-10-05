@@ -22,14 +22,12 @@ body {
   font-style: normal;
   font-family: $main-font-family;
   letter-spacing: 0.03em;
-  
-
-@media screen and (max-width: 767px){
+@media screen and (max-width:767px) {
   padding-top: 60px;
 }
+// @include for-size (tablet){
+//   padding-top: 80px;}
 }
-  
-
 
 
 .list {
