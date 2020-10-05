@@ -115,25 +115,22 @@ img {
 .title {
   margin-top: 0;
   margin-bottom: 30px;
-
-  font-weight: $subtitle-btn-fw;
-  font-size: $title-fs;
-  line-height: 1.17;
-  text-align: center;
+   text-align: center;
+    font-weight: $subtitle-btn-fw;
+  //  @media screen and (max-width: 1199px) {
+     font-size: $title-fs;
+  line-height: 1.17; 
   @include for-size (desktop) {
-     font-weight: 36px;
-     line-height: $link-subtitle-lh;
-}
+     font-size: 36px;
+     line-height: $link-subtitle-lh;}}
+
 .subtitle {
   font-size: $main-fs;
   font-weight:500;
   line-height: $link-subtitle-lh;
-  text-transform: uppercase;
-   
+  text-transform: uppercase;}
 
-   }
 
-}
 .text {
   font-size: $btn-text-fs;
   line-height: 1.87;
