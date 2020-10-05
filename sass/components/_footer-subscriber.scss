@@ -1,7 +1,9 @@
 .subscribe__mail{
-     display: block;
-     width: 100%;
+     width:450px;
     min-height: 50px;
+    font-size: $btn-text-fs;
+    line-height: 1.25;
+    padding: 15px 16px;
     background-color: inherit;
     border: 1px solid rgba(255,255,255,0.3);
     filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
@@ -10,17 +12,7 @@
     @include for-size(desktop) {
       width: 358px;
     margin-right: 12px;
-   }
-
-     &::placeholder {
-    padding-left: 16px;
-  font-size: $btn-text-fs;
-  padding-left: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-   
-  }
-}
+   }}
 
    .subscribe__btn.btn {
     display: flex;
@@ -40,10 +32,11 @@
    text-align: center;
  }
  
-  .subscribe { @include for-size(desktop) {
-  flex-direction: column; }
+  .subscribe{
+   @include for-size(desktop) {
+  flex-direction: column; }}
  
-}
+
 
 .subscribe__form {
  @include for-size(desktop){

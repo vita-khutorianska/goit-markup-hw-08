@@ -27,12 +27,6 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  body {
-    padding-top: 80px;
-  }
-}
-
 .list {
   list-style: none;
   margin: 0;
@@ -888,9 +882,11 @@ img {
 }
 
 .subscribe__mail {
-  display: block;
-  width: 100%;
+  width: 450px;
   min-height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 16px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -903,14 +899,6 @@ img {
     width: 358px;
     margin-right: 12px;
   }
-}
-
-.subscribe__mail::placeholder {
-  padding-left: 16px;
-  font-size: 16px;
-  padding-left: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe__btn.btn {
@@ -992,12 +980,13 @@ img {
   border-radius: 4px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleX(1);
   }
@@ -1006,14 +995,13 @@ img {
 @media screen and (max_width: 1199px) {
   .modal {
     width: 450px;
-    height: 609px;
+    height: auto;
   }
 }
 
 @media (min-width: 768px) {
   .modal {
     width: 528px;
-    height: 581px;
   }
 }
 

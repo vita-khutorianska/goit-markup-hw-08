@@ -9,18 +9,18 @@
  
  @include for-size (tablet){
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1);}
   @media screen and(max_width: 1199px) {
     width:450px;
-  height: 609px;
+  height:auto;
   
   }
 
 @include for-size (tablet){
-   width:528px;
-  height: 581px;}
+   width:528px;}
+ height: auto;
   
    }
 .modal__btn-close {
