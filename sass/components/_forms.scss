@@ -47,10 +47,9 @@
   transform: translateY(-50%);
   transition: fill $main-transition;
 
-  .form__input:focus,.form__input:hover ~ & {
-    fill: $acent;
-
-  }
+  // .form__input:focus,.form__input:hover ~ & {
+  //   fill: $acent;
+  // }
 }
 
 .form__textarea {
@@ -75,7 +74,7 @@
 
    &:focus,  &:hover {border-color: $acent;}
 }
-.form__field:focus-within {
+.form__field:focus-within .form__label{
   color: $acent;
 }
 
