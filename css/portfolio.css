@@ -21,6 +21,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
 .list {
   list-style: none;
   margin: 0;

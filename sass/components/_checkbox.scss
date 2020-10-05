@@ -33,10 +33,11 @@
 }
 .checkbox__label {
   display: flex;
+  justify-content: center;
   
   margin-bottom: 30px;
    color: $text-color;
- @media screen and (max-width: 767px){
+ @media screen and (max-width: 1199px){
   font-size: 12px;
   line-height: 1.16;
  }}

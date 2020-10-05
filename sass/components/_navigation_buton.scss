@@ -22,9 +22,7 @@
 .nav-button.is-open .icon-menu {
   display: none;
 }
-.nav__icons {
- 
-
+.nav__icons  {
    &:hover,
     &:focus {
       fill: $acent;
