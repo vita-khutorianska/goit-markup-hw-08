@@ -34,8 +34,8 @@
   .contacts .link {
      color: $text-color;
 display: flex;
-align-items: center;
-justify-content: center;
+ align-items: center;
+ 
 
  &:hover,
     &:focus {
@@ -43,6 +43,9 @@ justify-content: center;
   @media screen and (min-width: 767px) and (max-width: 1199px){
      font-size: 12px;
    }
+   @media screen and (max-width: 767px)
+ {justify-content: center;}
+
 }
 .contacts__icon {
   fill: currentColor;
