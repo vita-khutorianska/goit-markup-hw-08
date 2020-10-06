@@ -1,10 +1,13 @@
 .hero {
-   max-width:1600px;
+
+  //  max-width:1600px;
+  margin: 0px auto;
   min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   background-repeat: no-repeat;
    background-position: center;
   background-size: cover;
@@ -31,7 +34,7 @@
     }}
   
   @include for-size(desktop) {
-    height: 600px;
+    min-height: 600px;
    background-image:linear-gradient( $background, $background), 
     url(../img2/desktop/hero-Img.jpg);
    @media screen and (min-device-pixel-ratio: 2),
@@ -41,7 +44,15 @@
       screen and (min-resolution: 2dppx) {
       background-image:linear-gradient( $background, $background), url(../img2/desktop/hero-Img@2x.jpg);
     }}}
-
+    .hero__content {
+      text-align: center;
+       padding: 118px 0;
+       margin: 0 auto;
+        max-width: 360px;
+         @include for-size(desktop){
+          max-width: 696px; padding: 200px 0;
+         }
+    }
   .hero .btn {
     padding: 10px 32px;
   }
@@ -49,7 +60,7 @@
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
+  // text-align: center;
 
   font-weight: 900;
   font-size: 26px;
@@ -59,8 +70,10 @@
 
   text-transform: uppercase;
   color: $white;
+ 
 
    @include for-size(desktop)
    { font-size: 44px;
-  line-height: 1.36;}
+  line-height: 1.36;
+   }
   }

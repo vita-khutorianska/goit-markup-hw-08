@@ -19,12 +19,7 @@ body {
   font-style: normal;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
 }
 
 .list {
@@ -391,12 +386,8 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
+  margin: 0px auto;
   min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -424,7 +415,7 @@ img {
 
 @media (min-width: 1200px) {
   .hero {
-    height: 600px;
+    min-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img2/desktop/hero-Img.jpg);
   }
 }
@@ -435,6 +426,20 @@ img {
   }
 }
 
+.hero__content {
+  text-align: center;
+  padding: 118px 0;
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+@media (min-width: 1200px) {
+  .hero__content {
+    max-width: 696px;
+    padding: 200px 0;
+  }
+}
+
 .hero .btn {
   padding: 10px 32px;
 }
@@ -442,7 +447,6 @@ img {
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
