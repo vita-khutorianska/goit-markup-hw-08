@@ -485,13 +485,8 @@ img {
 @media (min-width: 768px) {
   .feature__item {
     margin-right: 30px;
-    width: calc((100% - 30px * 1) / 2);
-  }
-}
-
-@media (min-width: 768px) {
-  .feature__item {
     margin-bottom: 30px;
+    width: calc((100% - 30px * 1) / 2);
   }
   .feature__item:nth-child(2n) {
     margin-right: 0;

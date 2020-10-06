@@ -14,13 +14,9 @@
  }
       @include for-size (tablet){
    margin-right: 30px;
+    margin-bottom:30px; 
   
-   width: calc((100% - 30px * 1) / 2);}}
-   
-   .feature__item {
-
-   @include for-size (tablet) {
-      margin-bottom:30px ;
+   width: calc((100% - 30px * 1) / 2);
    
    &:nth-child(2n) { margin-right: 0;}
  
