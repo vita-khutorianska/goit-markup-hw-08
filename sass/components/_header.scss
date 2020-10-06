@@ -9,6 +9,9 @@
    text-decoration: none;
 
    border-bottom: 1px solid #ececec;
+   @media screen and (max-width: 767) {
+    padding: 16px 0px;
+  }
  }
 
   .header__nav {

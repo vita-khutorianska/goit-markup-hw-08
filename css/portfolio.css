@@ -186,6 +186,12 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767) {
+  .page-header {
+    padding: 16px 0px;
+  }
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -227,12 +233,6 @@ img {
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
-}
-
-@media screen and (max-width: 767) {
-  .logo {
-    padding: 16px 0px;
-  }
 }
 
 @media (min-width: 1200px) {
