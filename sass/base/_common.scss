@@ -6,7 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid red;
+   outline: 2px solid red;
+  // background-color: cyan;
   
 }
 
@@ -23,12 +24,7 @@ body {
   font-family: $main-font-family;
   letter-spacing: 0.03em;
   padding-top: 60px;}
-// @media screen and (max-width:767px) {
-  
-// }
-//  @include for-size (desktop){
-//    padding-top: 80px;}
-// }
+
 
 
 .list {
@@ -48,25 +44,22 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-
   @include for-size(mobile) {
-    // max-width: 462px;
-     width: 480px;
+      max-width: 465px;
+      // width: 480px;
     
   }
 
   @include for-size(tablet) {
-    // max-width: 750px;
-    width: 768px;
+     max-width: 750px;
+    // width: 768px;
   }
 
 
   @include for-size(desktop) {
-     width: 1200px;
-    // max-width: 1182px;
-  }
-}
-
+    //  width: 1200px;
+     max-width: 1182px;
+  }}
 
  .section {
    padding: 60px 0;
