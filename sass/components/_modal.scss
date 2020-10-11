@@ -13,13 +13,15 @@
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1);}
   @media screen and(max_width: 1199px) {
-    width:450px;
+     max-width:450px;
+   width:100%;;
   height:auto;
   
   }
 
 @include for-size (tablet){
-   width:528px;}
+  max-width:528px;
+   width:100%;}
  height: auto;
   
    }

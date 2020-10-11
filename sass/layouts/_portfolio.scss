@@ -30,7 +30,7 @@ a {
 
 .portfolio__item {
    @media screen and (min-width: 767px) and (max-width: 1199px) {
-     height: 440px;
+     height:auto;
      &:first-child{height: 404px;}
  }
   @include for-size(tablet) {
