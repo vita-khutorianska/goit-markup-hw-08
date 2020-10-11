@@ -474,7 +474,7 @@ a {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .portfolio__item {
-    height: 440px;
+    height: auto;
   }
   .portfolio__item:first-child {
     height: 404px;
